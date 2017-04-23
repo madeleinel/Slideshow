@@ -1,0 +1,59 @@
+body {
+  font-family: 'Poiret One', sans-serif;
+}
+
+h1 {
+  font-size: 10em;
+  text-align: center;
+  margin: 1em;
+}
+
+#slideshowNav {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #111;
+}
+
+#slideshowNav button {
+  font-family: 'Poiret One', sans-serif;
+  font-size: 1.2em;
+  width: 12em;
+}
+
+/* only display the first slide when open the page, ie before have chosen which slide to display */
+.slides img:not(:first-child) {
+    display: none;
+}
+
+.slide {
+  width: 100vw;
+  height: 80vh;
+  margin: 0 auto;
+  position: relative;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden;
+}
+
+.chooseImage {
+  background-color: #111;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  cursor: pointer;
+  outline: none;
+}
+
+.currentImage {
+  color: #55cf80;
+  outline: none;
+}
